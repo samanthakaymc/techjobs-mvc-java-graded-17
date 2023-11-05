@@ -12,42 +12,45 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+    <div th:fragment="loopResults">
     <table class="job-listing" th:each="job : ${jobs}">
-            <tr>
-                <th>Attribute</th>
-                <th>Value</th>
-            </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
 
-            <tr>
-                <td><strong>ID </strong></td>
-                <td th:text="${job.id}"> </td>
-            </tr>
+        <tr>
+            <td><strong>ID </strong></td>
+            <td th:text="${job.id}"> </td>
+        </tr>
 
-            <tr>
-                <td><strong>Name </strong></td>
-                <td th:text="${job.name}"> </td>
-            </tr>
+        <tr>
+            <td><strong>Name </strong></td>
+            <td th:text="${job.name}"> </td>
+        </tr>
 
-            <tr>
-                <td><strong>Employer </strong></td>
-                <td th:text="${job.employer}"> </td>
-            </tr>
+        <tr>
+            <td><strong>Employer </strong></td>
+            <td th:text="${job.employer}"> </td>
+        </tr>
 
-            <tr>
-                <td><strong>Location </strong></td>
-                <td th:text="${job.location}"> </td>
-            </tr>
+        <tr>
+            <td><strong>Location </strong></td>
+            <td th:text="${job.location}"> </td>
+        </tr>
 
-            <tr>
-                <td><strong>Position Type </strong></td>
-                <td th:text="${job.positionType}"> </td>
-            </tr>
+        <tr>
+            <td><strong>Position Type </strong></td>
+            <td th:text="${job.positionType}"> </td>
+        </tr>
 
-            <tr>
-                <td><strong>Skill </strong></td>
-                <td th:text="${job.coreCompetency}"> </td>
-            </tr>
+        <tr>
+            <td><strong>Skill </strong></td>
+            <td th:text="${job.coreCompetency}"> </td>
+        </tr>
+
     </table>
+    </div>
 </div>
 
 </body>
